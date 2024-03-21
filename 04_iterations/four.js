@@ -1,3 +1,5 @@
+//for in--for in statement loops through the properties of an Object:
+
 const myobj={
     js:'javascript',
     cpp:'c++',
