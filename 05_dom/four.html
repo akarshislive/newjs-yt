@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKA</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langname){
+      const li=  document.createElement('li')
+      li.innerHTML=`$(langname)`
+      document.querySelector('.language').
+      appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("ruby")
+
+    function addoptilanguage(langName){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptilanguage('goLang')
+
+//edit
+const sec=document.querySelector("li:nth-child(2)")
+console.log((sec));
+// sec.innerHTML="Mojo"
+const newli=document.createElement('li')
+newli.textContent="mojo"
+sec.replaceWith(newli)
+
+
+//edit
+const fir=document.querySelector("li:first-child")
+fir.outerHTML='<li>type</li>'
+
+
+//remove
+const last=document.querySelector('li:last-child')
+last.remove()
+
+</script>
+</html>
